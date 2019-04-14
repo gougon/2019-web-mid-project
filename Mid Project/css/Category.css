@@ -26,12 +26,13 @@ body{
 }
 
 html{
+    /* height: 1653px; */
     width: 100vw;
 }
 
 .head{
     position: fixed;
-    padding: 0px;
+    z-index: 200;
     width: 100vw;
 }
 
@@ -102,36 +103,43 @@ html{
 }
 
 .main{
-    padding: 0px 12.5%;
-    padding-top: 120px;
-    overflow: auto;
+    display: flex;
+    padding: 120px 12.5% 14px 12.5%;
+    justify-content: space-between;
     background-color: #ebebeb;
 }
 
-.div-main-top{
-    display: flex;
-    margin-bottom: 24px;
-    justify-content: space-between;
-    align-items: center;
+.div-category{
+    width: 83%;
+}
+
+.p-state{
+    margin-bottom: 14px;
+    line-height: 40px;
 }
 
 .row{
     display: flex;
-    margin-right: -24px;
+    margin: 0 -12px;
     flex-wrap: wrap;
 }
 
 .col{
     padding: 0px 12px;
-    width: calc(100%/4 - 48px);
-    height: calc(100%/4 - 30px);
+    width: calc(100%/3 - 32px);
+    height: calc(100%/3 - 30px);
 }
 
 .li-gallery_item{
-    height: 256px;
+    height: 211px;
     margin-right: 24px;
     margin-bottom: 24px;
     background-color: #ffffff;
+}
+
+.wrapper{
+    position: relative;
+    display: block;
 }
 
 .img-picture{
@@ -140,61 +148,15 @@ html{
     margin: 10px auto;
 }
 
-.div-intro{
-    display: flex;
-    width: fit-content;
-    justify-content: space-between;
-    align-items: center;
+.ads{
+    width: 17%;
+    margin: 64px 0 10px 0;
+    background-color: #ffffff;
 }
 
-.p-single_picture{
-    font-size: 14px;
-}
-
-.div-intro_heart{
-    width: 20%;
-    text-align: center;
-}
-
-.img-heart_picture{
-    display: block;
-    margin: 0 auto;
-    max-width: 50%;
-}
-
-.p-small_num{
-    display:inline-block;
-    margin-top: 15px;
-    font-size: 12px;
-}
-
-.p-intro_heart-num{
-    float: center;
-}
-
-.p-hot_picture{
-    float: right;
-    margin-bottom: 24px;
-}
-
-.ul-change_page{
-    display: flex;
-    margin: 32px -8px 60px 0px;
-    justify-content: center;
-}
-
-.li-change_page{
-    width: 40px;
-    height: 40px;
-    margin-right: 8px;
-    list-style-type: none;
-    text-align: center;
-    background-color: #cccccc;
-}
-
-.a-change_page{
-    line-height: 40px;
-    color: #000000;
+.img-ad{
+    max-width: 90%;
+    margin: 2.5% 5%;
 }
 
 .div-information{
@@ -229,4 +191,26 @@ html{
 
 .p-copyright{
     line-height: 56px;
+}
+
+.overlay{
+    width: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    widows: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    pointer-events: none;
+    font-weight: 100;
+}
+
+.overlay p{
+    font-weight: 100;
+    margin: 0px;
+    padding: 0px;
 }
