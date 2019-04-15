@@ -52,6 +52,14 @@ html{
     line-height: 32px;
 }
 
+.p-sign:hover{
+    color: #4e914e;
+}
+
+.p-sign:active{
+    color: #3e803e;
+}
+
 .div-nav{
     display: flex;
     height: 64px;
@@ -76,6 +84,10 @@ html{
 .p-nav{
     font-weight: bolder;
     color: #5ca15c;
+} 
+
+.p-nav:hover{
+    color: #ebebeb;
 }
 
 .p-more{
@@ -83,6 +95,14 @@ html{
     height: 40px;
     padding: 0px 10px;
     background-color: #3ebaf0;
+}
+
+.p-more:hover{
+    background-color: #2fabe0;
+}
+
+.p-more:active{
+    background-color: #219dcf;
 }
 
 .a-more{
@@ -100,6 +120,15 @@ html{
 .img-search{
     width: 30px;
     height: 30px;
+}
+
+.img-search:hover{
+    background-color: #4e914e;
+    opacity: 0.7;
+}
+
+.img-search:active{
+    opacity: 0.4;
 }
 
 .main{
@@ -171,10 +200,18 @@ html{
     padding-top: 11px;
 }
 
-.p-informaation_title{
+.p-information_title{
     font-size: 20px;
     font-weight: bolder;
     color: #3ebaf0;
+}
+
+.p-information_title:hover{
+    color: #2fabe0;
+}
+
+.p-information_title:active{
+    color: #219dcf;
 }
 
 .p-information_content{
