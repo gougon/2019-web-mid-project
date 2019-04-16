@@ -19,3 +19,12 @@ $(document).ready(function(){
         overlay.fadeOut(500);
     }) 
 });
+
+function openAdWin(){
+    var w_width = 664;
+    var w_height = 572;
+    var x = (screen.width - w_width) / 2;
+    var y = (screen.height - w_height) / 2;
+    var feature = 'width=' + w_width + ', height=' + w_height + ', left=' + x + ', top=' + y;
+    window.open('Ads.html', '', feature)
+}
