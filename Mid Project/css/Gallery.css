@@ -7,11 +7,6 @@
     text-decoration: none;
 }
 
-body{
-    margin: 0px 0px;
-    background: rgba(255, 255, 255, 1);
-}
-
 .bolder_smooth{
     border-style: none;
     border-radius: 0.5rem;
@@ -23,6 +18,10 @@ body{
 
 .li-type_none{
     list-style-type: none;
+}
+
+.li-gallery_item-rwd{
+    display: none;
 }
 
 .head{
@@ -64,10 +63,24 @@ body{
     background-color: #426642;
 }
 
+@media screen and (max-width: 1024px){
+    .div-nav{
+        height: 104px;
+    }
+}
+
 .img-nav-logo{
     width: 130px;
     height: 48px;
     padding-right: 50px;
+}
+
+@media screen and (max-width: 1024px){
+    .img-nav-logo{
+        height: 48px;
+        margin-top: -40px;
+        padding-right: 0px;
+    }
 }
 
 .div-nav-right{
@@ -77,6 +90,28 @@ body{
     align-items: center;
 }
 
+@media screen and (max-width: 1024px){
+    .div-nav-right{
+        display: block;
+    }
+}
+
+.div-unsearch{
+    width: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px){
+    .div-unsearch{
+        width: 100%;
+        margin-top: -40px;
+        justify-content: space-around;
+        background: #6db06d;
+    }
+}
+
 .p-nav{
     font-weight: bolder;
     color: #5ca15c;
@@ -84,6 +119,13 @@ body{
 
 .p-nav:hover{
     color: #ebebeb;
+}
+
+
+@media screen and (max-width: 1024px){
+    .p-nav{
+        color: #173d17;
+    }
 }
 
 .p-more{
@@ -107,10 +149,22 @@ body{
     color: #ffffff;
 }
 
+@media screen and (max-width: 1024px){
+    .div-search{
+        text-align: right;
+    }
+}
+
 .input-search{
     width: 160px;
     padding-left: 20px;
     line-height: 40px;
+}
+
+@media screen and (max-width: 480px){
+    .input-search{
+        width: 50%;
+    }
 }
 
 .img-search{
@@ -127,11 +181,21 @@ body{
     opacity: 0.4;
 }
 
+.div-nav-hidden{
+    padding: 0 12.5%;
+}
+
 .main{
     padding: 0px 12.5%;
     padding-top: 120px;
     overflow: auto;
     background-color: #ebebeb;
+}
+
+@media screen and (max-width: 1024px){
+    .main{
+        padding-top: 160px;
+    }
 }
 
 .div-main-top{
@@ -141,6 +205,18 @@ body{
     align-items: center;
 }
 
+@media screen and (max-width: 580px){
+    .div-main-top{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .p-state{
+        margin-bottom: 24px;
+    }
+}
+
 .row{
     display: flex;
     margin-right: -24px;
@@ -148,13 +224,42 @@ body{
 }
 
 .col{
+    height: 0px;
     padding: 0px 12px;
     width: calc(100%/4 - 48px);
-    height: calc(100%/4 - 30px);
+    padding-bottom: calc(100%/4 - 24px);
+}
+
+@media screen and (max-width: 1024px){
+    .li-gallery_item-rwd{
+        display: block;
+    }
+
+    .col{
+        width: calc(100%/3 - 48px);
+        padding-bottom: calc(100%/3 - 24px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .li-gallery_item-rwd{
+        display: none;
+    }
+
+    .col{
+        width: calc(100%/2 - 48px);
+        padding-bottom: calc(100%/2 - 24px);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .col{
+        width: calc(100%/1 - 48px);
+        padding-bottom: calc(100%/1 - 24px);
+    }
 }
 
 .li-gallery_item{
-    height: 256px;
     margin-right: 24px;
     margin-bottom: 24px;
     background-color: #ffffff;
@@ -187,13 +292,21 @@ body{
 
 .div-intro{
     display: flex;
-    width: fit-content;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
+.div-intro_text{
+    width: 70%;
+}
+
 .p-single_picture{
+    padding-bottom: calc(20% - 18.4px);
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .div-intro_heart{
@@ -209,8 +322,11 @@ body{
 
 .p-small_num{
     display:inline-block;
-    margin-top: 15px;
+    width: 100%;
     font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .p-intro_heart-num{
@@ -220,6 +336,12 @@ body{
 .p-hot_picture{
     float: right;
     margin-bottom: 24px;
+}
+
+@media screen and (max-width: 580px){
+    .p-hot_picture{
+        float: left;
+    }
 }
 
 .ul-change_page{
@@ -235,6 +357,12 @@ body{
     list-style-type: none;
     text-align: center;
     background-color: #cccccc;
+}
+
+@media screen and (max-width: 480px){
+    .li-change_page-rwd{
+        display: none;
+    }
 }
 
 .li-change_page:hover{
@@ -290,4 +418,20 @@ body{
 
 .p-copyright{
     line-height: 56px;
+}
+
+@media screen and (max-width: 1024px){
+    .visible{
+        display: none;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .hidden{
+        display: block;
+    }
 }

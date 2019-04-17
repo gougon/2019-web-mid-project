@@ -6,6 +6,7 @@
     font-family: 'Microsoft JhengHei';
     text-decoration: none;
 }
+
 body{
     margin: 0px 0px;
     background: rgba(255, 255, 255, 1);
@@ -24,14 +25,10 @@ body{
     list-style-type: none;
 }
 
-html{
-    width: 100vw;
-}
-
 .head{
     position: fixed;
     padding: 0px;
-    width: 100vw;
+    width: 100%;
 }
 
 .div-signline{
@@ -50,6 +47,21 @@ html{
     line-height: 32px;
 }
 
+.p-sign{
+    color: #5ca15c;
+    padding-right: 10px;
+    vertical-align:middle;
+    line-height: 32px;
+}
+
+.p-sign:hover{
+    color: #4e914e;
+}
+
+.p-sign:active{
+    color: #3e803e;
+}
+
 .div-nav{
     display: flex;
     height: 64px;
@@ -59,9 +71,24 @@ html{
     background-color: #426642;
 }
 
+@media screen and (max-width: 1024px){
+    .div-nav{
+        height: 104px;
+    }
+}
+
 .img-nav-logo{
     width: 130px;
     height: 48px;
+    padding-right: 50px;
+}
+
+@media screen and (max-width: 1024px){
+    .img-nav-logo{
+        height: 48px;
+        margin-top: -40px;
+        padding-right: 0px;
+    }
 }
 
 .div-nav-right{
@@ -71,9 +98,42 @@ html{
     align-items: center;
 }
 
+@media screen and (max-width: 1024px){
+    .div-nav-right{
+        display: block;
+    }
+}
+
+.div-unsearch{
+    width: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px){
+    .div-unsearch{
+        width: 100%;
+        margin-top: -40px;
+        justify-content: space-around;
+        background: #6db06d;
+    }
+}
+
 .p-nav{
     font-weight: bolder;
     color: #5ca15c;
+}
+
+.p-nav:hover{
+    color: #ebebeb;
+}
+
+
+@media screen and (max-width: 1024px){
+    .p-nav{
+        color: #173d17;
+    }
 }
 
 .p-more{
@@ -83,10 +143,24 @@ html{
     background-color: #3ebaf0;
 }
 
+.p-more:hover{
+    background-color: #2fabe0;
+}
+
+.p-more:active{
+    background-color: #219dcf;
+}
+
 .a-more{
     line-height: 40px;
     font-weight: bolder;
     color: #ffffff;
+}
+
+@media screen and (max-width: 1024px){
+    .div-search{
+        text-align: right;
+    }
 }
 
 .input-search{
@@ -95,17 +169,47 @@ html{
     line-height: 40px;
 }
 
+@media screen and (max-width: 480px){
+    .input-search{
+        width: 50%;
+    }
+}
+
 .img-search{
     width: 30px;
     height: 30px;
 }
+
+.img-search:hover{
+    background-color: #4e914e;
+    opacity: 0.7;
+}
+
+.img-search:active{
+    opacity: 0.4;
+}
+
+.div-nav-hidden{
+    padding: 0 12.5%;
+}
 /*main*/
+
 .main{
+    padding: 0px 12.5%;
+    padding-top: 120px;
+    overflow: auto;
+    background-color: #ebebeb;
+}
+
+@media screen and (max-width: 1024px){
+    .main{
+        padding-top: 160px;
+    }
 }
 
 .div-Donate{
     display: flex;
-    padding: 120px 12.5% 14px 12.5%;
+    padding-bottom: 14px;
     background-color: #ebebeb;
     height: 800px;
 }
@@ -213,4 +317,20 @@ html{
 
 .p-copyright{
     line-height: 56px;
+}
+
+@media screen and (max-width: 1024px){
+    .visible{
+        display: none;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .hidden{
+        display: block;
+    }
 }

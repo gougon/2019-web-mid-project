@@ -18,13 +18,22 @@
         <div class="div-nav">
             <img src="images/logo.png" class="img-nav-logo">
             <div class="div-nav-right">
-                <p><a href="Gallery.html" class="p-nav">Gallery</a></p>
-                <p><a href="Category.html" class="p-nav">Category</a></p>
-                <p class="p-more bolder_smooth"><a href="#" class="a-more">UPLOAD</a></p>
+                <div class="div-unsearch">
+                    <p><a href="Gallery.html" class="p-nav visible">Gallery</a></p>
+                    <p><a href="Category.html" class="p-nav visible">Category</a></p>
+                    <p class="p-more bolder_smooth visible"><a href="#" class="a-more visible">UPLOAD</a></p>
+                </div>
                 <div class="div-search">
                     <input type="text" class="input-search bolder_smooth" placeholder="search ...">
                     <a href="#"><img src="images/magnifier.png" class="img-search bolder_smooth"></a>
                 </div>
+            </div>
+        </div>
+        <div class="div-nav-hidden">
+            <div class="div-unsearch bolder_smooth">
+                <p><a href="Gallery.html" class="p-nav hidden">Gallery</a></p>
+                <p><a href="Category.html" class="p-nav hidden">Category</a></p>
+                <p class="p-more bolder_smooth hidden"><a href="#" class="a-more hidden">UPLOAD</a></p>
             </div>
         </div>
     </header>
@@ -178,6 +187,24 @@
                     </a>
                 </div>
             </li>
+            <li class="li-gallery_item col bolder_smooth li-type_none li-gallery_item-rwd">
+                <div class="div-ad_pop" style="cursor:pointer" onclick="openAdWin()"></div>
+                <div class="div-gallery_item">
+                    <a href="innerpage.html" class="a-gallery_item">
+                        <img src="images/tsai1.png" class="img-picture">
+                        <div class="div-intro">
+                            <div class="div-intro_text">
+                                <p class="p-single_picture">我的頭靜電很強哦~</p>
+                                <p class="p-small_num">3 hours ago</p>
+                            </div>
+                            <div class="div-intro_heart">
+                                <img src="images/heart.png" class="img-heart_picture">
+                                <p class="p-small_num">345,230</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
         </ul>
         <p class="p-hot_picture p-more bolder_smooth"><a href="#" class="a-more">+ More picture</a></p>
         <br class="clear_float">
@@ -326,13 +353,31 @@
                     </a>
                 </div>
             </li>
+            <li class="li-gallery_item col bolder_smooth li-type_none li-gallery_item-rwd">
+                <div class="div-ad_pop" style="cursor:pointer" onclick="openAdWin()"></div>
+                <div class="div-gallery_item">
+                    <a href="innerpage.html" class="a-gallery_item">
+                        <img src="images/tsai1.png" class="img-picture">
+                        <div class="div-intro">
+                            <div class="div-intro_text">
+                                <p class="p-single_picture">我的頭靜電很強哦~</p>
+                                <p class="p-small_num">3 hours ago</p>
+                            </div>
+                            <div class="div-intro_heart">
+                                <img src="images/heart.png" class="img-heart_picture">
+                                <p class="p-small_num">345,230</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
         </ul>
         <ul class="ul-change_page">
             <li class="li-type_none"><a href="#" class="a-change_page"><p class="li-change_page bolder_smooth">&laquo;</p></a></li>
             <li class="li-type_none"><a href="#" class="a-change_page"><p class="li-change_page bolder_smooth">1</p></a></li>
             <li class="li-type_none"><a href="#" class="a-change_page"><p class="li-change_page bolder_smooth">2</p></a></li>
-            <li class="li-type_none"><a href="#" class="a-change_page"><p class="li-change_page bolder_smooth">3</p></a></li>
-            <li class="li-type_none"><a href="#" class="a-change_page"><p class="li-change_page bolder_smooth">4</p></a></li>
+            <li class="li-type_none"><a href="#" class="a-change_page"><p class="li-change_page bolder_smooth li-change_page-rwd">3</p></a></li>
+            <li class="li-type_none"><a href="#" class="a-change_page"><p class="li-change_page bolder_smooth li-change_page-rwd">4</p></a></li>
             <li class="li-type_none"><a href="#" class="a-change_page"><p class="li-change_page bolder_smooth">...</p></a></li>
             <li class="li-type_none"><a href="#" class="a-change_page"><p class="li-change_page bolder_smooth">99</p></a></li>
             <li class="li-type_none"><a href="#" class="a-change_page"><p class="li-change_page bolder_smooth">100</p></a></li>
@@ -346,7 +391,7 @@
                 <p class="p-information_content">View out main page.</p>
             </div>
             <div class="div-single_information">
-                <p><a href="About.html" class="p-information_title">About Me</a></p>
+                <p><a href="About.html" class="p-information_title">About</a></p>
                 <p class="p-information_content">View more about us.</p>
             </div>
             <div class="div-single_information">
