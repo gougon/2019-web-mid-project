@@ -6,7 +6,6 @@
     font-family: 'Microsoft JhengHei';
     text-decoration: none;
 }
-
 body{
     margin: 0px 0px;
     background: rgba(255, 255, 255, 1);
@@ -25,10 +24,14 @@ body{
     list-style-type: none;
 }
 
+html{
+    width: 100vw;
+}
+
 .head{
     position: fixed;
     padding: 0px;
-    width: 100%;
+    width: 100vw;
 }
 
 .div-signline{
@@ -47,21 +50,6 @@ body{
     line-height: 32px;
 }
 
-.p-sign{
-    color: #5ca15c;
-    padding-right: 10px;
-    vertical-align:middle;
-    line-height: 32px;
-}
-
-.p-sign:hover{
-    color: #4e914e;
-}
-
-.p-sign:active{
-    color: #3e803e;
-}
-
 .div-nav{
     display: flex;
     height: 64px;
@@ -71,24 +59,9 @@ body{
     background-color: #426642;
 }
 
-@media screen and (max-width: 1024px){
-    .div-nav{
-        height: 104px;
-    }
-}
-
 .img-nav-logo{
     width: 130px;
     height: 48px;
-    padding-right: 50px;
-}
-
-@media screen and (max-width: 1024px){
-    .img-nav-logo{
-        height: 48px;
-        margin-top: -40px;
-        padding-right: 0px;
-    }
 }
 
 .div-nav-right{
@@ -98,42 +71,9 @@ body{
     align-items: center;
 }
 
-@media screen and (max-width: 1024px){
-    .div-nav-right{
-        display: block;
-    }
-}
-
-.div-unsearch{
-    width: 54%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-@media screen and (max-width: 1024px){
-    .div-unsearch{
-        width: 100%;
-        margin-top: -40px;
-        justify-content: space-around;
-        background: #6db06d;
-    }
-}
-
 .p-nav{
     font-weight: bolder;
     color: #5ca15c;
-}
-
-.p-nav:hover{
-    color: #ebebeb;
-}
-
-
-@media screen and (max-width: 1024px){
-    .p-nav{
-        color: #173d17;
-    }
 }
 
 .p-more{
@@ -143,24 +83,10 @@ body{
     background-color: #3ebaf0;
 }
 
-.p-more:hover{
-    background-color: #2fabe0;
-}
-
-.p-more:active{
-    background-color: #219dcf;
-}
-
 .a-more{
     line-height: 40px;
     font-weight: bolder;
     color: #ffffff;
-}
-
-@media screen and (max-width: 1024px){
-    .div-search{
-        text-align: right;
-    }
 }
 
 .input-search{
@@ -169,54 +95,44 @@ body{
     line-height: 40px;
 }
 
-@media screen and (max-width: 480px){
-    .input-search{
-        width: 50%;
-    }
-}
-
 .img-search{
     width: 30px;
     height: 30px;
 }
-
-.img-search:hover{
-    background-color: #4e914e;
-    opacity: 0.7;
-}
-
-.img-search:active{
-    opacity: 0.4;
-}
-
-.div-nav-hidden{
-    padding: 0 12.5%;
-}
 /*main*/
-
 .main{
-    padding: 0px 12.5%;
-    padding-top: 120px;
-    overflow: auto;
-    background-color: #ebebeb;
-}
-
-@media screen and (max-width: 1024px){
-    .main{
-        padding-top: 160px;
-    }
 }
 
 .div-Donate{
     display: flex;
-    padding-bottom: 14px;
+    padding: 120px 12.5% 14px 12.5%;
     background-color: #ebebeb;
-    height: 800px;
 }
 .Donate-article-image{
     padding: 15px;
     padding-left: 40px;
     width: 90%;
+}
+@media screen and (max-width: 1024px){
+    .Donate-article-image{
+        padding-left: 36px;
+        padding: 12px;
+    }
+}
+@media screen and (max-width: 768px){
+    .Donate-article-image{
+        padding-left: 32px;
+        padding: 9px;
+    }
+}
+@media screen and (max-width: 480px){
+    .div-Donate{
+        flex-direction: column;
+    }
+    .Donate-article-image{
+        padding-left: 28px;
+        padding: 6px;
+    }
 }
 .Donate-article-title{
     font-style: bold;
@@ -226,15 +142,51 @@ body{
     display: flex;
     flex-direction: column;
     width: 65%;
+    height: 800px;
     border-radius: 10px;
     margin-right: 12px;
     background-color: lightgray;
     padding: 15px;
 }
+@media screen and (max-width: 1024px){
+    .Donate-article{
+        height: 700px;
+        padding: 12px;
+    }
+}
+@media screen and (max-width: 768px){
+    .Donate-article{
+        height: 600px;
+        padding: 9px;
+    }
+}
+@media screen and (max-width: 480px){
+    .Donate-article{
+        width: 100%;
+        margin-bottom: 6px;
+        height: 550px;
+        padding: 9px;
+    }
+}
 .Donate-title{
     font-style: "bold";
     font-size: 32px;
     padding: 0px;
+}
+@media screen and (max-width: 1024px){
+    .Donate-title{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 768px){
+    .Donate-title{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 480px){
+    .Donate-title{
+        font-size: 20px;
+    }
 }
 .Donate-article-hr{
     margin-top: 8px;
@@ -261,24 +213,99 @@ body{
     justify-content: flex-end;
 }
 .Donate-article-button1{
+    color: white;
     background-color: orange;
     font-style: bold;
-    border: 0px;
     border-radius: 5px;
     width: 50%;
     height: 20%;
     margin-right:15px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.Donate-article-button1:hover{
+    background-color: orangered;
 }
 .Donate-article-button2{
     border-radius: 5px;
     font-style: bold;
     width: 50%;
     height: 20%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.Donate-article-button2:hover{
+    background-color: gray;
+    color: white;
+}
+@media screen and (max-width: 768px){
+    .Donate-article-button1{
+        width: 100%;
+        margin-right: 12px;
+    }
+    .Donate-article-button2{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 480px){
+    .Donate-article-button1{
+        font-size: 12px;
+        padding: 3px;
+        width: 100%;
+        margin-right: 9px;
+    }
+    .Donate-article-button2{
+        font-size: 12px;
+        padding: 3px;
+        width: 75%;
+    }
 }
 .Donate-aside{
     width: 35%;
+    height: 800px;
     border-radius: 10px;
     background-color: lightgray;
+    padding: 15px;
+}
+.aside-text{
+}
+@media screen and (max-width: 1024px){
+    .Donate-aside{
+        height: 600px;
+        padding: 12px;
+    }
+}
+@media screen and (max-width: 768px){
+    .Donate-aside{
+        height: 600px;
+        padding: 6px;
+        font-size: 9px;
+    }
+    .aside-text{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px){
+    .Donate-aside{
+        width: 100%;
+        margin-bottom: 3px;
+        height: 700px;
+        padding: 6px;
+    }
+    .aside-text{
+        font-size: 10px;
+    }
+}
+.project1-title{
+    width: calc(80%);
+}
+.project2-title{
+    width: calc(100%);
+}
+.project-image{
+    width: calc(100%);
 }
 .Donate-aside-hr1{
     align-items: center;
@@ -317,20 +344,4 @@ body{
 
 .p-copyright{
     line-height: 56px;
-}
-
-@media screen and (max-width: 1024px){
-    .visible{
-        display: none;
-    }
-}
-
-.hidden{
-    display: none;
-}
-
-@media screen and (max-width: 1024px){
-    .hidden{
-        display: block;
-    }
 }

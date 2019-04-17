@@ -7,7 +7,23 @@
 }
 .content{
     color: black;
-    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+@media screen and (max-width: 1024px){
+    .content{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 768px){
+    .content{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 480px){
+    .content{
+        font-size: 24px;
+    }
 }
 .font-content{
     position:absolute;
@@ -20,15 +36,31 @@
     margin: 0px;
 }
 .title{
-    font-size: 80px;
+    color:black;
+    font-size: 72px;
     margin: 0px;
+}
+@media screen and (max-width: 1024px){
+    .title{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 768px){
+    .title{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 480px){
+    .title{
+        font-size: 24px;
+    }
 }
 .background{
     display: flex;
     justify-content: center;
     align-content: center;
-    background: url(../images/index.png);
-    height:1080px;
+    background: url(../images/index.jpg);
+    height:946px;
     text-align: center;
     line-height: 600px;
     padding: 0px;
