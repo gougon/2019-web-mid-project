@@ -221,9 +221,23 @@ body{
 
 .horizontal{
     display: flex;
-    width: calc(75%);
+    width: 75%;
     padding-bottom: 24px;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px){
+    .horizontal{
+        width: 100%;
+    }
+}
+
+.li-row{
+    width: 100%;
+}
+
+.p-row{
+    width: 80%;
 }
 
 .p-big_font{

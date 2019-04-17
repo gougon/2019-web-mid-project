@@ -220,6 +220,22 @@ body{
     height: calc(100%/3 - 30px);
 }
 
+@media screen and (max-width: 1024px){
+    .col{
+        padding: 0px 12px;
+        width: calc(100%/2 - 32px);
+        height: calc(100%/2 - 30px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .col{
+        padding: 0px 12px;
+        width: calc(100%/1 - 32px);
+        height: calc(100%/1 - 30px);
+    }
+}
+
 .li-gallery_item{
     margin-right: 24px;
     margin-bottom: 24px;
@@ -238,9 +254,16 @@ body{
 }
 
 .ads{
-    width: 17%;
+    width: 193px;
+    height: fit-content;
     margin: 64px 0 10px 0;
     background-color: #ffffff;
+}
+
+@media screen and (max-width: 480px){
+    .ads{
+        width: 150px;
+    }
 }
 
 .img-ad{
