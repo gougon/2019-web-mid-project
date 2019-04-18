@@ -212,26 +212,28 @@
 .div-content{
     display: flex;
     padding: 120px 12.5% 14px 12.5%;
+    margin-right: 36px;
     margin-bottom: 12px;
     background-color: #ebebeb;
-    height: 100%;
 }
 .content-img{
     width: 750px;
     height: 421px;
 }
 @media screen and (max-width: 1483px){
-    .div-content{
-        width: 100%;
+    .div-content{   
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 1024px){
+    .div-content{
+        width: 75%;
     }
 }
 @media screen and (max-width: 1012px){
     .div-content{
         padding-top: 160px;
     }
-}
-@media screen and (max-width: 1012px){
     .content-img{
         height: 100%;
         width: 100%;
@@ -252,14 +254,15 @@
     padding-bottom: 4px;
     margin-left: 12px; 
 }
-.div-upload{
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-}
 .article{
-    width: 70%;
-    margin-bottom: 6px;
+    margin-right: 60px;
+}
+@media screen and (max-width: 1483px){
+    .article{
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 6px;
+    }
 }
 
 .aside{
@@ -275,10 +278,12 @@
 }
 .ad-gif{
     width: 750px;
-
+}
+.div-upload{
+    display: flex;
+    justify-content: space-between;
 }
 .upload-hr{
-    width: 95%;
     margin-top: 6px;
     margin-bottom: 6px;
 }
@@ -286,13 +291,15 @@
     .aside{
         display: flex;
         padding: 13px;
-        width: calc(65%);
+        width: 724px;
     }
     .ad-img{
         width: 50%;
     }
+    .div-upload{
+        width: 750px;
+    }
     .ad-gif{
-        width: calc(65%);
         margin-bottom: 12px;
     }
     .upload-hr{
@@ -301,8 +308,14 @@
 }
 @media screen and (max-width: 1012px){
     .aside{
-        max-width: 100%;
-        padding: 8px;
+        width: calc(100%);
+        padding: 0px;
+    }
+    .div-upload{
+        width: 100%;
+    }
+    .ad-img{
+        width: 50%;
     }
     .upload-hr{
         width: 100%;

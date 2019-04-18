@@ -311,7 +311,7 @@ html{
     width: 50%;
     height: 20%;
     margin-right:15px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -323,7 +323,7 @@ html{
     font-style: bold;
     width: 50%;
     height: 20%;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
 }
